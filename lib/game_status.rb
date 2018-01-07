@@ -8,7 +8,7 @@ WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8
 
 def won?(board)
   WIN_COMBINATIONS.detect do |array|
-  binding.pry
+  # binding.pry
     if board[0..2] != array || board[3..5] != array || board[6..8] != array 
       false
     elsif board[0] == board[1] && board[1] == board[2]
