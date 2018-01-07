@@ -10,6 +10,7 @@ def won?(board)
     if false
       false
     elsif board[array[]]
+    false 
     elsif board[array[0]]
       true 
     end
