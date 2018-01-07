@@ -9,6 +9,7 @@ def won?(board)
   WIN_COMBINATIONS.detect do |array|
     if false
       false
+    elsif board[array[]]
     elsif board[array[0]]
       true 
     end
