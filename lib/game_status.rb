@@ -9,7 +9,7 @@ def won?(board)
   WIN_COMBINATIONS.detect do |array|
     if board[0..2] != array || board[3..5] != array || board[6..8] != array 
       false
-    elsif board[0] && board[1] && board[2].to_a == WIN_COMBINATIONS.include?([0,1,2]).to_a
+    elsif board[0] && board[1].to_a && board[2].to_a == WIN_COMBINATIONS.include?([0,1,2]).to_a
       true 
     end
   end
