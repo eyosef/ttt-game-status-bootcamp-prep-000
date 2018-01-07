@@ -11,7 +11,7 @@ def won?(board)
   binding.pry
     if board[0..2] != array || board[3..5] != array || board[6..8] != array 
       false
-    elsif array == board
+    elsif board[0] == board[1] && board[1] == board[2]
       true 
     end
   end
