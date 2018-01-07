@@ -9,7 +9,7 @@ def won?(board)
   WIN_COMBINATIONS.detect do |array|
     if false
       false
-    elsif board[0] == board[1] && board[1] == board[2]
+    elsif board[array[0]] == board[1] && board[1] == board[2]
       true 
     end
   end
